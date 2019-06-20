@@ -15,15 +15,7 @@
                         tincidunt mauris semper lorem</p>
                 </div><!-- col-sm-3 -->
                 
-                <div class="col-sm-4">
-                    <ul class="mtb-10 font-12 list-radial-35 list-li-mlr-3">
-                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                        <li><a href="#"><i class="ion-social-pinterest"></i></a></li>
-                        <li><a href="#"><i class="ion-social-google"></i></a></li>
-                        <li><a href="#"><i class="ion-social-rss"></i></a></li>
-                    </ul>
-                </div><!-- col-sm-3 -->
+                
             </div><!-- row -->
         </div><!-- text-center -->
     </div><!-- container -->
@@ -38,19 +30,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                 </div><!-- col-sm-3 -->
                 
-                <div class="col-sm-12 col-md-6">
-                    <ul class="mtb-5 font-11 text-md-center text-right list-a-p-5">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Business</a></li>
-                        <li><a href="#">Sport</a></li>
-                        <li><a href="#">Politics</a></li>
-                        <li><a href="#">Travel</a></li>
-                        <li><a href="#">Lifestyle</a></li>
-                        <li><a href="#">Culture</a></li>
-                        <li><a href="#">Tech</a></li>
-                        <li><a href="#">Video</a></li>
-                    </ul>
-                </div><!-- col-sm-3 -->
+                
             </div><!-- row -->
             
         </div><!-- container -->

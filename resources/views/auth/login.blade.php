@@ -9,15 +9,15 @@
             padding: 15px;
             margin: 0 auto;
         }
-        .form-signin .form-signin-heading, .form-signin .checkbox
+        .form-signin .form-signin-heading, .form-signin 
         {
             margin-bottom: 10px;
         }
-        .form-signin .checkbox
+        .form-signin 
         {
             font-weight: normal;
         }
-        .form-signin .form-control
+        .form-signin .form-control 
         {
             position: relative;
             font-size: 16px;
@@ -27,7 +27,7 @@
             -moz-box-sizing: border-box;
             box-sizing: border-box;
         }
-        .form-signin .form-control:focus
+        .form-signin .form-control :focus
         {
             z-index: 2;
         }
@@ -105,13 +105,17 @@
                     
                 </div>
                 <div class="form-group">
-                    <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" placeholder="Masukan Password Anda" required>
+                    <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }} password" name="password" placeholder="Masukan Password Anda" required>
 
                     @if ($errors->has('password'))
                     <span class="invalid-feedback" role="alert">
                     <strong class="text-danger">{{ $errors->first('password') }}</strong>
                     </span>
                     @endif
+                </div>
+
+                <div class="form-group">
+                <input type="checkbox" class="form-checkbox"> Show password
                 </div>
 
                 <button class="btn btn-lg btn-primary btn-block" name="login" id="btn-login" type="submit">
@@ -126,5 +130,16 @@
 <script type="text/javascript" src="{{ asset('login1/js/jquery-3.2.1.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('login1/js/bootstrap.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('login1/js/jquery.validate.min.js') }}"></script>
+<script type="text/javascript">
+    $(document).ready(function(){       
+        $('.form-checkbox').click(function(){
+            if($(this).is(':checked')){
+                $('.password').attr('type','text');
+            }else{
+                $('.password').attr('type','password');
+            }
+        });
+    });
+</script>
 </body>
 </html>

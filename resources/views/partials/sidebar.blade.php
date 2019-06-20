@@ -17,15 +17,23 @@
 			</a>
 			<ul class="children collapse" id="sub-item-1">
 				<li><a class="" href="/category">
-					<span class="fa fa-book text-info">&nbsp;</span> Data Kategori
+					<span class="fa fa-edit text-info">&nbsp;</span> Category Data
 				</a></li>
 
 				<li><a class="" href="/news">
-					<span class="fa fa-book text-info">&nbsp;</span> Data News
+					<span class="fa fa-book text-info">&nbsp;</span> News Data
 				</a></li>
-
 			</ul>
+			
 		</li>
+
+		<li><a class="" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+						<span class="fa fa-power-off text-danger">&nbsp;</span> {{ __('Logout') }}
+					</a></li>
+					<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+	@csrf
+</form>
 
 </div><!--/.sidebar-->
 

@@ -9,13 +9,6 @@
                     <li><a href="#">{{ $hari }}</a></li>
                     <li><a href="#">{{ $waktu }}</a></li>
                 </ul>
-                <ul class="float-right float-sm-none font-13 list-a-plr-10 list-a-plr-sm-5 list-a-ptb-15 list-a-ptb-sm-5 color-ash">
-                    <li><a class="pl-0 pl-sm-10" href="#"><i class="ion-social-facebook"></i></a></li>
-                    <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                    <li><a href="#"><i class="ion-social-pinterest"></i></a></li>
-                    <li><a href="#"><i class="ion-social-google"></i></a></li>
-                    <li><a href="#"><i class="ion-social-rss"></i></a></li>
-                </ul>
                 
             </div><!-- top-menu -->
         </div><!-- container -->
@@ -50,7 +43,7 @@
                     </ul>
                 </li>
                 @endforeach
-                <li class="drop-down"><a href="#!">View All Category ></a>
+                <li class="drop-down"><a href="">View All Category ></a>
                 </li>
             </ul>
             <div class="clearfix"></div>
