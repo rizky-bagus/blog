@@ -13,6 +13,7 @@
 
 Route::get('/', 'FrontendController@index');
 Route::get('/news/index', 'FrontendController@news')->name('index');
+Route::get('/news/category/{id}', 'FrontendController@filter')->name('filter');
 Route::get('/news/search', 'FrontendController@search')->name('search');
 Route::get('/news/details/{id}', 'FrontendController@detail')->name('detail');
 
