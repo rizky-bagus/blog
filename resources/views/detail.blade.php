@@ -27,7 +27,11 @@
 					
 					<div class="sided-half">
 						<ul class="s-left ptb-5 list-btn-semiwhite sided-sm-center">
+<<<<<<< HEAD
 							<li><a href="#">{{ $news->Category->category }}</a></li>
+=======
+							<li><a href="{{ route('filter', $news->Category->id) }}">{{ $news->Category->category }}</a></li>
+>>>>>>> bb26c00e7cbecee07e63dcf3452c667359b432eb
 						</ul>
 						
 						</ul>
