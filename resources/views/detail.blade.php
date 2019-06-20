@@ -28,7 +28,7 @@
 					
 					<div class="sided-half">
 						<ul class="s-left ptb-5 list-btn-semiwhite sided-sm-center">
-							<li><a href="#">{{ $news->Category->name }}</a></li>
+							<li><a href="{{ route('filter', $news->Category->id) }}">{{ $news->Category->category }}</a></li>
 						</ul>
 						<ul class="s-right sided-sm-center ptb-5 list-a-p-5 list-a-plr-10 font-11 color-ash">
 							<li><a href="#"><i class="ion-social-facebook"></i></a></li>
