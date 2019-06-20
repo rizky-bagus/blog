@@ -19,7 +19,7 @@ class FrontendController extends Controller
         $this->timeZone('Asia/Jakarta');
         $hari =  date("Y-m-d");
         $waktu = date("H:i:s");
-        $category = Category::paginate(10);
+        $category = Category::all();
         $news = News::orderBy('created_at', 'DESC')->where('status', 1)->take(6)->get();
         $recents = News::orderBy('created_at', 'desc')->where('status', 1)->take(8)->get();
 

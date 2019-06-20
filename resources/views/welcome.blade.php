@@ -22,10 +22,9 @@
                     <div class="s-right ptb-50 p-sm-20 pb-sm-5 plr-30 plr-xs-0">
                         <h4><a href="{{ route('detail', $data->id) }}">{{ $data->title }}</a></h4>
                         <ul class="mtb-10 list-li-mr-20 color-lite-black">
-                            <li><i class="mr-5 font-12 ion-clock"></i>Jan 25, 2018</li>
+                            <li><i class="mr-5 font-12 ion-clock"></i>{{$data->created_at}}</li>
                             <li><i class="mr-5 font-12 ion-android-person"></i>{{ $data->author }}</li>
-                            <li><i class="mr-5 font-12 ion-ios-chatbubble-outline"></i>15</li>
-                            <li><i class="mr-5 font-12 ion-eye"></i>105</li>
+                            
                         </ul>
                     </div><!-- right-area -->
                 </div><!-- sided-250x -->
@@ -62,8 +61,7 @@
                                 <h5><a href="{{ route('detail', $data->id) }}">
                                     <b>{{ $data->title }}</b></a></h5>
                                 <ul class="mtb-5 list-li-mr-20 color-lite-black">
-                                    <li><i class="mr-5 font-12 ion-clock"></i>Jan 25, 2018</li>
-                                    <li><i class="mr-5 font-12 ion-eye"></i>105</li>
+                                    <li><i class="mr-5 font-12 ion-clock"></i>{{$data->created_at}}</li>
                                 </ul>
                             </div><!-- s-left -->
                         </div><!-- sided-80x -->

@@ -37,8 +37,6 @@
                 @foreach($category as $data)
                 <li><a href="{{ route('filter', $data->id) }}">{{$data->category}}</a></li>
                 @endforeach
-                <li class="drop-down"><a href="">View All Category ></a>
-                </li>
             </ul>
             <div class="clearfix"></div>
         </div><!-- container -->

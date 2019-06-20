@@ -3,6 +3,7 @@
 @section('content')
 <br>        
  <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+    <h2>Selamat Datang {{Auth::user()->name}}</h2>
  <div class="panel panel-container">
             <div class="row">
                 <div class="col-xs-6 col-md-6 col-lg-6 no-padding">

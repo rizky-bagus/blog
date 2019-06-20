@@ -18,23 +18,18 @@
 					<img src="{{ $news->image }}" alt="">
 					<h3 class="mt-30 mb-5"><a href="#"><b>{{ $news->title }}</b></a></h3>
 					<ul class="list-li-mr-10 color-lite-black">
-						<li><i class="mr-5 font-12 ion-clock"></i>Jan 25, 2018</li>
+						<li><i class="mr-5 font-12 ion-clock"></i>{{$news->created_at}}</li>
 						<li><i class="mr-5 font-12 ion-android-person"></i>{{ $news->author }}</li>
-						<li><i class="mr-5 font-12 ion-ios-chatbubble-outline"></i>15</li>
-						<li><i class="mr-5 font-12 ion-eye"></i>105</li>
+						
 					</ul>
 					
 					{!! $news->content !!}
 					
 					<div class="sided-half">
 						<ul class="s-left ptb-5 list-btn-semiwhite sided-sm-center">
-							<li><a href="#">{{ $news->Category->name }}</a></li>
+							<li><a href="#">{{ $news->Category->category }}</a></li>
 						</ul>
-						<ul class="s-right sided-sm-center ptb-5 list-a-p-5 list-a-plr-10 font-11 color-ash">
-							<li><a href="#"><i class="ion-social-facebook"></i></a></li>
-							<li><a href="#"><i class="ion-social-twitter"></i></a></li>
-							<li><a href="#"><i class="ion-social-google"></i></a></li>
-							<li><a href="#"><i class="ion-social-instagram"></i></a></li>
+						
 						</ul>
 					</div><!-- sided-half -->
 				</div><!-- card-view -->
@@ -63,8 +58,8 @@
 								<h5><a href="{{ route('detail', $data->id) }}">
 									<b>{{ $data->title }}</b></a></h5>
 								<ul class="mtb-5 list-li-mr-20 color-lite-black">
-									<li><i class="mr-5 font-12 ion-clock"></i>Jan 25, 2018</li>
-									<li><i class="mr-5 font-12 ion-eye"></i>105</li>
+									<li><i class="mr-5 font-12 ion-clock"></i>{{$data->created_at}}</li>
+									
 								</ul>
 							</div><!-- s-left -->
 						</div><!-- sided-80x -->
