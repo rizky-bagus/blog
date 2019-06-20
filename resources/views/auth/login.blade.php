@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Login - E-learning</title>
+    <title>Login</title>
     <link rel="stylesheet" type="text/css" href="{{ asset('login1/css/bootstrap.min.css ') }}">
     <style>
         .form-signin
