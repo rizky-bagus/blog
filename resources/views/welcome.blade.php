@@ -6,22 +6,14 @@
         <div class="row">
         
             <div class="col-md-12 col-lg-8">
-                <div class="mb-30 p-30 ptb-sm-25 plr-sm-15 card-view">
-                    <h4 class="p-title"><b>TODAY FEATURED</b></h4>
-                    <img src="{{ asset('assets/images/news-1-700x400.jpg') }}" alt="">
-                    <h3 class="mt-30"><a href="#">WPP is investigating an allegation of personal misconduct against 
-                        its chief executive Sir Martin Sorrell.</a></h3>
-                    <ul class="mtb-10 list-li-mr-20 color-lite-black">
-                        <li><i class="mr-5 font-12 ion-clock"></i>Jan 25, 2018</li>
-                        <li><i class="mr-5 font-12 ion-android-person"></i>John Dowson</li>
-                        <li><i class="mr-5 font-12 ion-ios-chatbubble-outline"></i>15</li>
-                        <li><i class="mr-5 font-12 ion-eye"></i>105</li>
-                    </ul>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat tincidunt mauris 
-                        semper lorem, in dignissim ex metus a lacus. Sed venenatis dolor vitae vehicula varius. 
-                        Aliquam vitae donis lobortis diamet...</p>
-                </div><!-- bg-white -->
-                
+                <div class="ptb-0">
+                    <a class="mt-10 color-ash" href="{{ url('/') }}"><i class="mr-5 ion-ios-home"></i><b>HOME</b></a>
+                    <h1 class="mtb-20"><b>News</b></h1>
+                    <p class="mb-30">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat tincidunt mauris semper lorem, 
+                        in dignissim ex metus a lacus. 
+                        Sed venenatis dolor vitae vehicula varius. Aliquam vitae donis lobortis diamet</p>
+                </div>
+
                 @foreach($news as $data)
                 <div class="mb-30 sided-250x card-view">
                     <div class="s-left">
