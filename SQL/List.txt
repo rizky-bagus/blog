@@ -1,0 +1,13 @@
+Rizky
+- crud category
+- Authentifikasi Login
+- api Category
+- Dashboard Admin
+- Frontend guest
+-templating Backend
+Alif
+- crud news
+- frontend guest (welcome, index news, detail news, fitur search, paginate)
+- api news
+- api filter berdasarkan category
+- publish news
