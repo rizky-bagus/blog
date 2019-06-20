@@ -4,8 +4,7 @@
             <div class="oflow-hidden font-9 text-sm-center ptb-sm-5">
             
                 <ul class="float-left float-sm-none list-a-plr-10 list-a-plr-sm-5 list-a-ptb-15 list-a-ptb-sm-10 list-a-ptb-xs-5">
-                    <li><a class="pl-0 pl-sm-10" href="#">Stockholm, Sweden
-                        <i class="ion-android-cloud-outline"></i> 15 &#8451;</a></li>
+                    <li><a class="pl-0 pl-sm-10" href="#">Time</a></li>
                     <li><a href="#">{{ $hari }}</a></li>
                     <li><a href="#">{{ $waktu }}</a></li>
                 </ul>
