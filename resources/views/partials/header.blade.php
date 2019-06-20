@@ -36,12 +36,7 @@
             
             <ul class="main-menu" id="main-menu">
                 @foreach($category as $data)
-                <li class="drop-down"><a href="#!">{{$data->category}}<i class="ion-chevron-down"></i></a>
-                    <ul class="drop-down-menu drop-down-inner">
-                        <li><a href="#">PAGE 1</a></li>
-                        <li><a href="#">PAGE 2</a></li>
-                    </ul>
-                </li>
+                <li><a href="{{ route('filter', $data->id) }}">{{$data->category}}</a></li>
                 @endforeach
                 <li class="drop-down"><a href="">View All Category ></a>
                 </li>
