@@ -25,8 +25,10 @@ class HomeController extends Controller
      */
     public function index()
     {
+        $category = Category::count();
+        $berita = News::count();
         $news = News::where('status',1)->get();
-        return view('home',compact('news'));
+        return view('home',compact('news','category','berita'));
     }
 
     public function view($id)
