@@ -14,14 +14,14 @@
         async:false,
         dataType: 'json',
         success:function(data){
-          console.log(data.category_id);
-          $('input#id').val(data.id);
-          $('input#author').val(data.author);
-          $('input#title').val(data.title);
-          $('textarea#description').val(data.description);
-          $('input#image').val(data.image);
-          $('textarea#content').val(data.content);
-          $('input#category_id').val(data.category_id);
+          console.log(data.data.author);
+          $('input#id').val(data.data.id);
+          $('input#author').val(data.data.author);
+          $('input#title').val(data.data.title);
+          $('textarea#description').val(data.data.description);
+          $('input#image').val(data.data.image);
+          $('textarea#content').val(data.data.content);
+          $('input#category_id').val(data.data.category_id);
         },
         complete: function() {
             // $('#indexCategory').attr('hidden', false);
@@ -70,13 +70,13 @@
         dataType: 'json',
         success:function(data){
           console.log(data.category_id);
-          $('input#id').val(data.id);
-          $('input#author').val(data.author);
-          $('input#title').val(data.title);
-          $('textarea#description').val(data.description);
-          $('input#image').val(data.image);
-          $('textarea#content').val(data.content);
-          $('input#category_id').val(data.category_id);
+          $('input#id').val(data.data.id);
+          $('input#author').val(data.data.author);
+          $('input#title').val(data.data.title);
+          $('textarea#description').val(data.data.description);
+          $('input#image').val(data.data.image);
+          $('textarea#content').val(data.data.content);
+          $('input#category_id').val(data.data.category_id);
         },
         complete: function() {
             // $('#indexCategory').attr('hidden', false);

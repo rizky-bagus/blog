@@ -25,7 +25,10 @@ class NewsController extends Controller
     		];
     	}
 
-        $dataJSON = ['data'=>$this->data];
+        $dataJSON = [
+            'status' => 200,
+            'data' => $this->data
+        ];
     	return response()->json($dataJSON, 200);
     }
 
@@ -33,7 +36,11 @@ class NewsController extends Controller
     {
     	$news = News::findOrFail($id);
 
-    	return response()->json($news, 200);
+        $dataJSON = [
+            'status' => 200,
+            'data' => $news
+        ];
+    	return response()->json($dataJSON, 200);
     }
 
     public function store(Request $request)
@@ -49,7 +56,11 @@ class NewsController extends Controller
 
         $news->save();
 
-    	return response()->json($news, 201);
+        $dataJSON = [
+            'status' => 201,
+            'data' => $news
+        ];
+    	return response()->json($dataJSON, 201);
     }
 
     public function update(Request $request, $id)
@@ -69,7 +80,11 @@ class NewsController extends Controller
 
         $news->save();
 
-    	return response()->json($news, 200);
+        $dataJSON = [
+            'status' => 200,
+            'data' => $news
+        ];
+    	return response()->json($dataJSON, 200);
     }
 
     public function destroy($id)
@@ -90,6 +105,10 @@ class NewsController extends Controller
 
         $news->save();
 
+        $dataJSON = [
+            'status' => 200,
+            'data' => $news
+        ];
         return response()->json($news, 200);
     }
 }
