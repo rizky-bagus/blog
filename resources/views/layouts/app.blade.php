@@ -43,35 +43,10 @@
     <script src="{{ asset('backend/js/custom.js ') }}"></script>
     <script src="{{ asset('js/dataTables.bootstrap4.min.js') }}"></script>
     <script src="{{ asset('datatable/jquery.dataTables.min.js ') }}"></script>
-    {{-- <script src="{{ asset('selectize/select2.min.js')}}"></script> --}}
     <script src="{{ asset('assets/backEnd/global.js') }}"></script>
     <script type="text/javascript" src="{{ asset('backend/js/ckeditor/ckeditor.js')}}"></script>
-    {{-- <script type="text/javascript">
-        $(document).ready(function() {
-            $('#datatables').DataTable({
-                    
-            });
-        });
-    </script> --}}
-
-    {{-- <script type="text/javascript">
-        $(document).ready(function(){
-            $('#id').select2({
-                maximumInputLength: 10
-
-            });
-        });
-    </script>
-
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('#id1').select2({
-                maximumInputLength: 10
-
-            });
-        });
-    </script> --}}
-
+    
+    
     <script type="text/javascript">
 
 
@@ -90,10 +65,7 @@
 
     </script>
 
-    {{-- <script>
-            CKEDITOR.replace( 'content' );
-    </script> --}}
-
+    
     <script>
         var baseUrl = 'http://localhost:8000/api/';
         var imageUrl = 'http://localhost:8000/assets/images';

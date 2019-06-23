@@ -1,13 +1,6 @@
 @extends('layouts.app')
 @section('scripts')
 <script src="{{ asset('assets/backEnd/news.js') }}"></script>
-{{-- <script>
-    ClassicEditor
-        .create( document.querySelector( '#editor' ) )
-        .catch( error => {
-            console.error( error );
-        } );
-</script> --}}
 @endsection
 @section('content')
 <br>
