@@ -22,7 +22,10 @@ class CategoryController extends Controller
             ];
         }
 
-        $dataJSON = ['data'=>$this->data];
+        $dataJSON = [
+            'status' => 200,
+            'data' => $this->data
+        ];
         return response()->json($dataJSON, 200);
 
     }
@@ -32,7 +35,11 @@ class CategoryController extends Controller
     {
         $category = News::where('category_id', $id)->get();
 
-        return response()->json($category, 200);
+        $dataJSON = [
+            'status' => 200,
+            'data' => $category
+        ];
+        return response()->json($dataJSON, 200);
     }
 
     
@@ -43,14 +50,23 @@ class CategoryController extends Controller
         $category->category = $request->category;
         $category->save();
 
-        return response()->json($category, 201);
+        $dataJSON = [
+            'status' => 201,
+            'data' => $category
+        ];
+        return response()->json($dataJSON, 201);
     }
  
     public function edit($id)
     {
         //
         $category = Category::findOrFail($id);
-        return response()->json($category, 200);
+
+        $dataJSON = [
+            'status' => 200,
+            'data' => $category
+        ];
+        return response()->json($dataJSON, 200);
     }
 
     
@@ -62,7 +78,11 @@ class CategoryController extends Controller
 
         $category->save();
 
-        return response()->json($category, 200);
+        $dataJSON = [
+            'status' => 200,
+            'data' => $category
+        ];
+        return response()->json($dataJSON, 200);
     }
 
     public function destroy($id)

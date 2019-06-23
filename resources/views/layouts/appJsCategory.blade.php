@@ -51,8 +51,8 @@
         dataType: 'json',
         success:function(data){
           console.log(data.category);
-          $('input#id').val(data.id);
-          $('input#category').val(data.category);
+          $('input#id').val(data.data.id);
+          $('input#category').val(data.data.category);
         },
         complete: function() {
             // $('#indexCategory').attr('hidden', false);
