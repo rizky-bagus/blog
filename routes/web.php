@@ -17,14 +17,20 @@ Route::get('/news/category/{id}', 'FrontendController@filter')->name('filter');
 Route::get('/news/search', 'FrontendController@search')->name('search');
 Route::get('/news/details/{id}', 'FrontendController@detail')->name('detail');
 
-// Category
-Route::get('/category', function() {
-	return view('category.index');
-});
 
-// News
-Route::get('/news', function() {
-	return view('news.index');
+Route::group(['middleware'=>['auth']],
+	function() {
+
+	// Category
+	Route::get('/category', function() {
+		return view('category.index');
+	});
+
+	// News
+	Route::get('/news', function() {
+		return view('news.index');
+	});
+
 });
 
 Auth::routes();
